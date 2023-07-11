@@ -1,0 +1,1084 @@
+{
+  "name": "VISUALISATION_DONNEES_PATIENTS_PAR_AXES",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "fr-FR",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "fr-FR",
+    "tables": [
+      {
+        "name": "dtm patients_par_region",
+        "lineageTag": "2f7e2ce6-380a-4d5e-9cf3-4a0253dcfb92",
+        "columns": [
+          {
+            "name": "region",
+            "dataType": "string",
+            "sourceColumn": "region",
+            "lineageTag": "d3407c84-13b1-478d-bbe6-df67eeac45d4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "annee",
+            "dataType": "string",
+            "sourceColumn": "annee",
+            "lineageTag": "06347764-ed71-4624-bcbd-59328dde8373",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_admis",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_admis",
+            "formatString": "0",
+            "lineageTag": "1f7effcd-4b2d-4506-863f-7a4cfe5f19c6",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_gueri",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_gueri",
+            "formatString": "0",
+            "lineageTag": "8146b3f8-4bdc-4982-8ef1-a21966cc3593",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_decede",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_decede",
+            "formatString": "0",
+            "lineageTag": "8a3b4138-9a75-4fae-ac06-422861b639fd",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_en_hosp",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_en_hosp",
+            "formatString": "0",
+            "lineageTag": "07b9b6c6-99d3-403c-b37b-06b5def11be5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "duree_moyenne_traitement",
+            "dataType": "double",
+            "sourceColumn": "duree_moyenne_traitement",
+            "lineageTag": "d2bb0607-efcb-48d1-a4f0-9fa35d2ff42e",
+            "summarizeBy": "average",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dtm patients_par_region-f73d3fc5-cdd8-44ee-844c-0fadad7ffe24",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"localhost\", \"postgres\"),",
+                "    dtm_patients_par_region = Source{[Schema=\"dtm\",Item=\"patients_par_region\"]}[Data],",
+                "    #\"Colonnes supprimées\" = Table.RemoveColumns(dtm_patients_par_region,{\"date_insertion\", \"date_maj\", \"identifiant\"})",
+                "in",
+                "    #\"Colonnes supprimées\""
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_a910020c-72b3-4b2c-8f09-36d0f91f1ff8",
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "62c01e18-e7ef-405c-a5c9-4b18cfe237a9",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "6d3b4fde-9090-46ac-87b7-81d8719c973e",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Année",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "lineageTag": "b04456b3-f5bc-40d3-9d8d-fe4f66013e0c",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NoMois",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "lineageTag": "87960aa0-8c6b-480a-9504-ebddced4cdf7",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mois",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "NoMois",
+            "lineageTag": "44934678-663d-42bf-b75d-f068e6e9b74c",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NoTrimestre",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "formatString": "0",
+            "lineageTag": "2b40bfd7-61b9-4b0e-803c-26a55e7422db",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "sortByColumn": "NoTrimestre",
+            "lineageTag": "06b95e35-de64-4f14-ae83-8fb5561a7cd1",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Jour",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "lineageTag": "69f5490a-655f-423d-b0b9-268cd1611f14",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DateTableTemplate_a910020c-72b3-4b2c-8f09-36d0f91f1ff8-d19208a1-8058-40ec-a3ca-03b2480e80ad",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "lineageTag": "0930885c-30ed-4183-8f6d-f02e4cbe1cc5",
+            "levels": [
+              {
+                "name": "Année",
+                "ordinal": 0,
+                "column": "Année",
+                "lineageTag": "75a12980-ae63-4c54-a27b-db664e0876a8"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "d30e4a88-996e-46bc-a90d-eb50c457ace4"
+              },
+              {
+                "name": "Mois",
+                "ordinal": 2,
+                "column": "Mois",
+                "lineageTag": "2be85c89-aa49-4abf-a7f6-3d45847352a8"
+              },
+              {
+                "name": "Jour",
+                "ordinal": 3,
+                "column": "Jour",
+                "lineageTag": "2ae911b8-9b48-4b7e-abe6-c77af5cac7fa"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ]
+      },
+      {
+        "name": "dtm patients_par_axes",
+        "lineageTag": "c5c2ee47-65d2-4968-8349-5a95697b1d25",
+        "columns": [
+          {
+            "name": "identifiant",
+            "dataType": "int64",
+            "sourceColumn": "identifiant",
+            "formatString": "0",
+            "lineageTag": "b36d030e-8005-4767-9aef-7a0b98b206fe",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "region",
+            "dataType": "string",
+            "sourceColumn": "region",
+            "lineageTag": "51f553d2-b9a2-40f5-a576-0b60046b986d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "departement",
+            "dataType": "string",
+            "sourceColumn": "departement",
+            "lineageTag": "942d30f7-e94e-4f8b-9d73-77198b052716",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "hopital",
+            "dataType": "string",
+            "sourceColumn": "hopital",
+            "lineageTag": "15cc9e1e-be2e-47c8-9948-fa6a9a966b0a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "annee",
+            "dataType": "string",
+            "sourceColumn": "annee",
+            "lineageTag": "51974326-3608-45f9-93cb-194675ae173c",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "mois",
+            "dataType": "string",
+            "sourceColumn": "mois",
+            "lineageTag": "8efdb872-4098-4d65-9d57-3e9eb2138f3b",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_admis",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_admis",
+            "formatString": "0",
+            "lineageTag": "9869e787-fb1b-4f49-849c-b4cc63ba58ea",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_gueri",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_gueri",
+            "formatString": "0",
+            "lineageTag": "1a356926-986d-452d-8029-e1fff0d7afc8",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_decede",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_decede",
+            "formatString": "0",
+            "lineageTag": "76bd8a5c-10d1-4c68-8b4b-c0bbe2e56bf8",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nbre_patients_en_hosp",
+            "dataType": "int64",
+            "sourceColumn": "nbre_patients_en_hosp",
+            "formatString": "0",
+            "lineageTag": "6e00b359-e8f8-4f9f-b6c4-e255f42a541f",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "duree_moyenne_traitement",
+            "dataType": "double",
+            "sourceColumn": "duree_moyenne_traitement",
+            "lineageTag": "459a0c17-9597-4971-b00e-d2f94970296c",
+            "summarizeBy": "average",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "date_insertion",
+            "dataType": "dateTime",
+            "sourceColumn": "date_insertion",
+            "formatString": "Long Date",
+            "lineageTag": "7d5e1d96-75bc-4fff-856c-e1690fa6d11a",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "relationship": "86b4bb59-98ec-4b05-b9bc-a32f90c33db7",
+                "defaultHierarchy": {
+                  "table": "LocalDateTable_3b710553-a8c6-49c6-8d8d-7b620ed6bdcc",
+                  "hierarchy": "Hiérarchie de dates"
+                },
+                "isDefault": true
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          },
+          {
+            "name": "date_maj",
+            "dataType": "dateTime",
+            "sourceColumn": "date_maj",
+            "formatString": "Long Date",
+            "lineageTag": "c2114023-5d0a-40bf-98ca-74da3e88a96c",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "relationship": "9c9d8d21-5a94-4980-818e-42353494c3ca",
+                "defaultHierarchy": {
+                  "table": "LocalDateTable_aab334a1-59e8-4b44-883a-7ba4ddaddd09",
+                  "hierarchy": "Hiérarchie de dates"
+                },
+                "isDefault": true
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dtm patients_par_axes-d9488953-7073-4e82-8bd5-40e757c814df",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"localhost\", \"postgres\"),",
+                "    dtm_patients_par_axes = Source{[Schema=\"dtm\",Item=\"patients_par_axes\"]}[Data]",
+                "in",
+                "    dtm_patients_par_axes"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_3b710553-a8c6-49c6-8d8d-7b620ed6bdcc",
+        "isHidden": true,
+        "showAsVariationsOnly": true,
+        "lineageTag": "a613fb69-b5db-40bd-a512-20e9c0574b26",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "5499e2fa-91ab-43cc-876d-4cde6ac3d15f",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Année",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "lineageTag": "d24131fb-67df-4134-9137-59e12793da3b",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NoMois",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "lineageTag": "4b160b04-12eb-46be-b2ac-7a3ac1dfbbae",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mois",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "NoMois",
+            "lineageTag": "c8004edc-5b9a-4b80-bdfb-73bb5cf273ad",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NoTrimestre",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "formatString": "0",
+            "lineageTag": "14634454-a8e4-47a4-be09-b88e9aef7c5a",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "sortByColumn": "NoTrimestre",
+            "lineageTag": "2c07437d-307e-4f96-ae03-b616f0cbbe39",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Jour",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "lineageTag": "5ccd798f-0c32-4515-aab8-a2f884380c52",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LocalDateTable_3b710553-a8c6-49c6-8d8d-7b620ed6bdcc-9930916e-0fd2-434b-af2f-3201728194d8",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(Year(MIN('dtm patients_par_axes'[date_insertion])), 1, 1), Date(Year(MAX('dtm patients_par_axes'[date_insertion])), 12, 31))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "lineageTag": "afc958f3-b4b2-4a57-a6da-64d572d1ee3d",
+            "levels": [
+              {
+                "name": "Année",
+                "ordinal": 0,
+                "column": "Année",
+                "lineageTag": "77c89bb5-1794-41df-81be-4c3415bb19bc"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "8f59e154-3a71-4904-9ab1-71659888d660"
+              },
+              {
+                "name": "Mois",
+                "ordinal": 2,
+                "column": "Mois",
+                "lineageTag": "7d353246-09e0-4566-ad49-4b9f7e4d311f"
+              },
+              {
+                "name": "Jour",
+                "ordinal": 3,
+                "column": "Jour",
+                "lineageTag": "9e685298-c795-4311-8abb-28962bd5aecd"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_aab334a1-59e8-4b44-883a-7ba4ddaddd09",
+        "isHidden": true,
+        "showAsVariationsOnly": true,
+        "lineageTag": "58f709b9-c8d0-4ad0-91b2-ccca57736b60",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "c2e511d0-b097-4b38-9401-4f63bc82b487",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Année",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "lineageTag": "a8feb2d1-d6c0-4932-8cf2-6f60548e13c1",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NoMois",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "lineageTag": "2964a810-91e3-4f82-9c32-b41bc13d820a",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mois",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "NoMois",
+            "lineageTag": "cc013f0b-be78-49bd-b530-6fd7aa64a0b8",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NoTrimestre",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "formatString": "0",
+            "lineageTag": "02e214a2-32a8-4a14-92dd-b2109becd787",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "sortByColumn": "NoTrimestre",
+            "lineageTag": "f4f1f182-506d-4e95-a4ba-11d5acf159a1",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Jour",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "lineageTag": "83df992c-4a05-4833-9890-ffa23d6d65af",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LocalDateTable_aab334a1-59e8-4b44-883a-7ba4ddaddd09-7329bcdb-c9cb-4366-9848-09235f2c2c60",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(Year(MIN('dtm patients_par_axes'[date_maj])), 1, 1), Date(Year(MAX('dtm patients_par_axes'[date_maj])), 12, 31))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "lineageTag": "39dda9e6-f266-4567-b7f3-85a6c1d5b13a",
+            "levels": [
+              {
+                "name": "Année",
+                "ordinal": 0,
+                "column": "Année",
+                "lineageTag": "ad03aa9b-dc5e-424d-be24-e35d973625a7"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "8e121f6f-8bca-4daf-9a01-ddef6941007c"
+              },
+              {
+                "name": "Mois",
+                "ordinal": 2,
+                "column": "Mois",
+                "lineageTag": "c194106f-ba99-4ea5-8c49-5ab049cbaf24"
+              },
+              {
+                "name": "Jour",
+                "ordinal": 3,
+                "column": "Jour",
+                "lineageTag": "55e1d6ad-e7a3-4f60-af18-f05315e395ea"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "86b4bb59-98ec-4b05-b9bc-a32f90c33db7",
+        "fromTable": "dtm patients_par_axes",
+        "fromColumn": "date_insertion",
+        "toTable": "LocalDateTable_3b710553-a8c6-49c6-8d8d-7b620ed6bdcc",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "9c9d8d21-5a94-4980-818e-42353494c3ca",
+        "fromTable": "dtm patients_par_axes",
+        "fromColumn": "date_maj",
+        "toTable": "LocalDateTable_aab334a1-59e8-4b44-883a-7ba4ddaddd09",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "d38ce7ea-6fe6-4e18-b0de-6f87681468db",
+        "fromTable": "dtm patients_par_axes",
+        "fromColumn": "region",
+        "toTable": "dtm patients_par_region",
+        "toColumn": "region"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "fr-FR",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US",
+            "DynamicImprovement": "HighConfidence"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.105.664.0 (22.05)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"dtm patients_par_region\",\"dtm patients_par_axes\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Shared Expressions\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"]}"
+      }
+    ]
+  }
+}
