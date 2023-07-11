@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_H9AGkPXGEe238N8KjWDbqA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_H9AGkfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Schema" prompt="CTX_FORM_DTM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dtm"/>
+    <contextParameter xmi:id="_H9AGkvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Password" prompt="CTX_FORM_DTM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:u/VNyQG0b5AG/8ojHFhEQtW3cuuJCpYB2DyEcDUaRTBYdtRd"/>
+    <contextParameter xmi:id="_H9AGk_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Port" prompt="CTX_FORM_DTM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_H9AGlPXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Server" prompt="CTX_FORM_DTM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_H9AGlfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Login" prompt="CTX_FORM_DTM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGlvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Database" prompt="CTX_FORM_DTM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGl_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_AdditionalParams" prompt="CTX_FORM_DTM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_H9AGmPXGEe238N8KjWDbqA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_H9AGmfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Schema" prompt="CTX_FORM_DTM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dtm"/>
+    <contextParameter xmi:id="_H9AGmvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Password" prompt="CTX_FORM_DTM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:z4BYXy5PMPGypVz8jT39oqIM21JwyxmPS0h28gNmvt2/dEb5"/>
+    <contextParameter xmi:id="_H9AGm_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Port" prompt="CTX_FORM_DTM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_H9AGnPXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Server" prompt="CTX_FORM_DTM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_H9AGnfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Login" prompt="CTX_FORM_DTM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGnvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Database" prompt="CTX_FORM_DTM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGn_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_AdditionalParams" prompt="CTX_FORM_DTM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_H9AGoPXGEe238N8KjWDbqA" confirmationNeeded="false" name="PREPOD">
+    <contextParameter xmi:id="_H9AGofXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Schema" prompt="CTX_FORM_DTM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dtm"/>
+    <contextParameter xmi:id="_H9AGovXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Password" prompt="CTX_FORM_DTM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:R8DeMySzlXwx6FoLd8VxpaCoBq31SzWbfWo0Jf5aQopUzVcH"/>
+    <contextParameter xmi:id="_H9AGo_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Port" prompt="CTX_FORM_DTM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_H9AGpPXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Server" prompt="CTX_FORM_DTM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_H9AGpfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Login" prompt="CTX_FORM_DTM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGpvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Database" prompt="CTX_FORM_DTM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGp_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_AdditionalParams" prompt="CTX_FORM_DTM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_H9AGqPXGEe238N8KjWDbqA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_H9AGqfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Schema" prompt="CTX_FORM_DTM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dtm"/>
+    <contextParameter xmi:id="_H9AGqvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Password" prompt="CTX_FORM_DTM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:x1qCRTlwEB6VDGVUiV4pmOImz1IPBLqexiBSMGZ7fyB4tTof"/>
+    <contextParameter xmi:id="_H9AGq_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Port" prompt="CTX_FORM_DTM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_H9AGrPXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Server" prompt="CTX_FORM_DTM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_H9AGrfXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Login" prompt="CTX_FORM_DTM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGrvXGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_Database" prompt="CTX_FORM_DTM_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_H9AGr_XGEe238N8KjWDbqA" comment="" name="CTX_FORM_DTM_AdditionalParams" prompt="CTX_FORM_DTM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

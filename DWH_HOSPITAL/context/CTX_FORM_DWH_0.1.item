@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_Z7e60PXFEe238N8KjWDbqA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_Z7e60fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh"/>
+    <contextParameter xmi:id="_Z7e60vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:MQ3NCIZa19SoU4mKHqVja62gM1k9a1SSCE8LoAf4FQ/uqwta"/>
+    <contextParameter xmi:id="_Z7e60_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_Z7e61PXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_Z7e61fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e61vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e61_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Z7e62PXFEe238N8KjWDbqA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_Z7e62fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh"/>
+    <contextParameter xmi:id="_Z7e62vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/8OjKjJGYrS4v8O99jn15zQ0oIaFs0xwuluhWjJMVPsjupz8"/>
+    <contextParameter xmi:id="_Z7e62_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_Z7e63PXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_Z7e63fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e63vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e63_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Z7e64PXFEe238N8KjWDbqA" confirmationNeeded="false" name="PREPOD">
+    <contextParameter xmi:id="_Z7e64fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh"/>
+    <contextParameter xmi:id="_Z7e64vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:KbFxaa6/rnsB0u1w6A7ILskyWBtibCDTNOTof07aLryugxEi"/>
+    <contextParameter xmi:id="_Z7e64_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_Z7e65PXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_Z7e65fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e65vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e65_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Z7e66PXFEe238N8KjWDbqA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_Z7e66fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dwh"/>
+    <contextParameter xmi:id="_Z7e66vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:D4S25iUreNoBAUXdyAwgqKNCITof11ORVFl2YN3XR9KOzt5j"/>
+    <contextParameter xmi:id="_Z7e66_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_Z7e67PXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
+    <contextParameter xmi:id="_Z7e67fXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e67vXFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_Z7e67_XFEe238N8KjWDbqA" comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

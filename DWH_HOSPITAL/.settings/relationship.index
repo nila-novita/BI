@@ -1,0 +1,856 @@
+[ {
+  "baseItem" : {
+    "id" : "_8RXmIBJyEe6QP4mlfyWwyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_region",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_rejets",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Bu5VABg1Ee6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_DyMBMBjfEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "LOCAL_PROJECT:_EKZ_EBNcEe6QP4mlfyWwyA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_HDSloBM5Ee6QP4mlfyWwyA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:__xZmcPfbEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_EKZ_EBNcEe6QP4mlfyWwyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Eih5wB5VEe6gmJAmU3bz9g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "LOCAL_PROJECT:_Bu5VABg1Ee6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_lB5xkBjjEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_s0OYEBgXEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_yx_iUB2OEe6gmJAmU3bz9g",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_FY_xgBjgEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "LOCAL_PROJECT:_DyMBMBjfEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_o3p0wBjbEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_rIw-8BjfEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_HDSloBM5Ee6QP4mlfyWwyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_rejets",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_IPvd4BkcEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_yGY3wBHhEe6Tw9dxFYnvbg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_MyWfYBMnEe6QP4mlfyWwyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_region",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_NBRJ0BHiEe6Tw9dxFYnvbg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_yGY3wBHhEe6Tw9dxFYnvbg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_PCcg0BN2Ee6QP4mlfyWwyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_rejets",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_SB9IQBg_Ee6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_H81HcPXGEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_wZvQkPXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wZvQkPXFEe238N8KjWDbqA - patients_par_region",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_ZEpcwBjgEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "LOCAL_PROJECT:_Bu5VABg1Ee6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_NBRJ0BHiEe6Tw9dxFYnvbg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_s0OYEBgXEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "__xZmcPfbEe238N8KjWDbqA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_sPgUIPfbEe238N8KjWDbqA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_e41UMBHVEe6Tw9dxFYnvbg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_FayMgBHVEe6Tw9dxFYnvbg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_h9Hq4BeDEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_lB5xkBjjEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "LOCAL_PROJECT:_SB9IQBg_Ee6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_uAVHIBjNEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_mn5mYBjgEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "LOCAL_PROJECT:_FY_xgBjgEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_ZEpcwBjgEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_lB5xkBjjEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_o3p0wBjbEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "LOCAL_PROJECT:_8RXmIBJyEe6QP4mlfyWwyA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_MyWfYBMnEe6QP4mlfyWwyA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_ubDZgPXJEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_rIw-8BjfEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "LOCAL_PROJECT:_PCcg0BN2Ee6QP4mlfyWwyA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_e41UMBHVEe6Tw9dxFYnvbg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_h9Hq4BeDEe6cXor6mhz5Tw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_s0OYEBgXEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_3vLfAPXDEe238N8KjWDbqA - stg_rejets",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_uAVHIBjNEe6cXor6mhz5Tw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_H81HcPXGEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_wZvQkPXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wZvQkPXFEe238N8KjWDbqA - patients_par_axes",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA - dwh_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_ubDZgPXJEe238N8KjWDbqA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_63AOwPXHEe238N8KjWDbqA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_region",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_vpA5EBMjEe6QP4mlfyWwyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_fNLTYPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_63AOwPXHEe238N8KjWDbqA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_FayMgBHVEe6Tw9dxFYnvbg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_departement",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_etablissements_hospitaliers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_region",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_sPgUIPfbEe238N8KjWDbqA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_yx_iUB2OEe6gmJAmU3bz9g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M_u9gOs6Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z7WX8PXFEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wh7YsPXEEe238N8KjWDbqA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LJe7oOs8Ee21ueDc2CzQAQ - ods_patients",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]

@@ -1,0 +1,29 @@
+{
+  "itemId" : "_LJe7oOs8Ee21ueDc2CzQAQ",
+  "contextList" : [ {
+    "contextName" : "DEV",
+    "repoId" : "_YrCp4OtBEe21ueDc2CzQAQ",
+    "parameterList" : [ {
+      "id" : "_YrLz2etBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_Server"
+    }, {
+      "id" : "_YrLz2utBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_Schema"
+    }, {
+      "id" : "_YrLz2-tBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_AdditionalParams"
+    }, {
+      "id" : "_YrLz3OtBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_Port"
+    }, {
+      "id" : "_YrLz3etBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_Password"
+    }, {
+      "id" : "_YrLz3utBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_Database"
+    }, {
+      "id" : "_YrLz3-tBEe21ueDc2CzQAQ",
+      "name" : "CTX_FORM_ODS_Login"
+    } ]
+  } ]
+}

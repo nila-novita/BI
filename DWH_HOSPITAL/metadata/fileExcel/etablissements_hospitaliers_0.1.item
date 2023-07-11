@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_Fa-ZwBHVEe6Tw9dxFYnvbg" name="etablissements_hospitaliers" dataPackage="_Fa-ZwRHVEe6Tw9dxFYnvbg" Server="Localhost 127.0.0.1" FilePath="C:/Users/nila.novita/Documents/project/Talend/Ressources/Sources/Data/Input/Referentiel/etablissements_hospitaliers.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Sheet" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Fa-ZwRHVEe6Tw9dxFYnvbg" name="default" dataManager="_Fa-ZwBHVEe6Tw9dxFYnvbg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Fa-ZwhHVEe6Tw9dxFYnvbg" id="_iU3BEBHTEe6Tw9dxFYnvbg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZwxHVEe6Tw9dxFYnvbg" label="code_etab" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZxBHVEe6Tw9dxFYnvbg" label="nom_etab" length="38" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZxRHVEe6Tw9dxFYnvbg" label="adresse" length="31" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZxhHVEe6Tw9dxFYnvbg" label="complement_adresse" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZxxHVEe6Tw9dxFYnvbg" label="num_dept" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZyBHVEe6Tw9dxFYnvbg" label="dept" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZyRHVEe6Tw9dxFYnvbg" label="num_tel" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZyhHVEe6Tw9dxFYnvbg" label="num_fax" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZyxHVEe6Tw9dxFYnvbg" label="num_cat" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZzBHVEe6Tw9dxFYnvbg" label="categorie_etablissement" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZzRHVEe6Tw9dxFYnvbg" label="num_type" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZzhHVEe6Tw9dxFYnvbg" label="type_etablissement" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-ZzxHVEe6Tw9dxFYnvbg" label="code_tarif" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-Z0BHVEe6Tw9dxFYnvbg" label="lib_tarification" length="56" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-Z0RHVEe6Tw9dxFYnvbg" label="code_psph" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-Z0hHVEe6Tw9dxFYnvbg" label="participant_service_public_hospitalier" length="48" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-Z0xHVEe6Tw9dxFYnvbg" label="date_ouverture" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-Z1BHVEe6Tw9dxFYnvbg" label="lat" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fa-Z1RHVEe6Tw9dxFYnvbg" label="lng" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

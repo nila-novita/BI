@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="" internalId="_BlXUcBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlXUcRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlXUchMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_Password" value="enc:system.encryption.key.v1:+Td/k8owIcIkJ+FUzO9A6ueab+ewdrOga6sNjh568M80ZhmM" internalId="_BlXUcxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="5432" internalId="_BlXUdBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="ods" internalId="_BlXUdRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="localhost" internalId="_BlXUdhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_Data" prompt="CTX_FORM_REPERTOIRE_Data?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data" internalId="_BlXUdxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataArchives" prompt="CTX_FORM_REPERTOIRE_DataArchives?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Archives" internalId="_BlXUeBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInput" prompt="CTX_FORM_REPERTOIRE_DataInput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input" internalId="_BlXUeRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInputReferentiel" prompt="CTX_FORM_REPERTOIRE_DataInputReferentiel?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input\Referentiel" internalId="_BlXUehMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataLogs" prompt="CTX_FORM_REPERTOIRE_DataLogs?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Logs" internalId="_BlXUexMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataOutput" prompt="CTX_FORM_REPERTOIRE_DataOutput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Output" internalId="_BlXUfBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_AdditionalParams" prompt="CTX_FORM_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="" internalId="_BlXUfRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Database" prompt="CTX_FORM_STG_Database?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlXUfhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Login" prompt="CTX_FORM_STG_Login?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlXUfxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Password" prompt="CTX_FORM_STG_Password?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:jTGhgYMirfdfQtEmXuRIc/TQJAQOF7exhbOY+SfHEycPFZh5" internalId="_BlXUgBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Port" prompt="CTX_FORM_STG_Port?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="5432" internalId="_BlXUgRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Schema" prompt="CTX_FORM_STG_Schema?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="stg" internalId="_BlXUghMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Server" prompt="CTX_FORM_STG_Server?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="localhost" internalId="_BlXUgxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="127.0.0.1" internalId="_tCE3sBjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="dwh" internalId="_tCE3sRjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="5432" internalId="_tCE3shjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3sxjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3tBjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:qWt1cKPvqlGceLPuv2nzXvyj/zrmSp0oCcrjHBzJR9W5YgK2" internalId="_tCE3tRjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="" internalId="_tCE3thjkEe6cXor6mhz5Tw"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="" internalId="_BlXUhBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlXUhRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlXUhhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_Password" value="enc:system.encryption.key.v1:hbTRLUPTzmO9P5VkEQtkl+pVnBdKc/TGpT0LFUkTURvqyJBB" internalId="_BlXUhxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="5432" internalId="_BlXUiBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="ods" internalId="_BlXUiRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="localhost" internalId="_BlXUihMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_Data" prompt="CTX_FORM_REPERTOIRE_Data?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data" internalId="_BlXUixMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataArchives" prompt="CTX_FORM_REPERTOIRE_DataArchives?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Archives" internalId="_BlXUjBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInput" prompt="CTX_FORM_REPERTOIRE_DataInput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input" internalId="_BlXUjRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInputReferentiel" prompt="CTX_FORM_REPERTOIRE_DataInputReferentiel?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input\Referentiel" internalId="_BlXUjhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataLogs" prompt="CTX_FORM_REPERTOIRE_DataLogs?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Logs" internalId="_BlXUjxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataOutput" prompt="CTX_FORM_REPERTOIRE_DataOutput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Output" internalId="_BlXUkBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_AdditionalParams" prompt="CTX_FORM_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="" internalId="_BlXUkRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Database" prompt="CTX_FORM_STG_Database?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlXUkhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Login" prompt="CTX_FORM_STG_Login?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlXUkxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Password" prompt="CTX_FORM_STG_Password?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:pr69AoaX4ev61yAq8pkY0n1Moi+38ELARO6J4Z3naMm7wYlv" internalId="_BlXUlBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Port" prompt="CTX_FORM_STG_Port?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="5432" internalId="_BlXUlRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Schema" prompt="CTX_FORM_STG_Schema?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="stg" internalId="_BlXUlhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Server" prompt="CTX_FORM_STG_Server?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="localhost" internalId="_BlXUlxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="127.0.0.1" internalId="_tCE3txjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="dwh" internalId="_tCE3uBjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="5432" internalId="_tCE3uRjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3uhjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3uxjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:pLL6hGhw8iXZOkuofAqfRgSQ0R6C6V81ZHHUyEOycr37AgpF" internalId="_tCE3vBjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="" internalId="_tCE3vRjkEe6cXor6mhz5Tw"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="" internalId="_BlXUmBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlXUmRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlXUmhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_Password" value="enc:system.encryption.key.v1:g2jUawvua+u3A7JygHa840ea9KJSOAcBhtSf9wCoGdBopCpw" internalId="_BlXUmxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="5432" internalId="_BlXUnBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="ods" internalId="_BlXUnRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="localhost" internalId="_BlXUnhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_Data" prompt="CTX_FORM_REPERTOIRE_Data?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data" internalId="_BlXUnxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataArchives" prompt="CTX_FORM_REPERTOIRE_DataArchives?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Archives" internalId="_BlXUoBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInput" prompt="CTX_FORM_REPERTOIRE_DataInput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input" internalId="_BlXUoRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInputReferentiel" prompt="CTX_FORM_REPERTOIRE_DataInputReferentiel?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input\Referentiel" internalId="_BlXUohMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataLogs" prompt="CTX_FORM_REPERTOIRE_DataLogs?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Logs" internalId="_BlXUoxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataOutput" prompt="CTX_FORM_REPERTOIRE_DataOutput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Output" internalId="_BlXUpBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_AdditionalParams" prompt="CTX_FORM_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="" internalId="_BlXUpRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Database" prompt="CTX_FORM_STG_Database?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlXUphMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Login" prompt="CTX_FORM_STG_Login?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlXUpxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Password" prompt="CTX_FORM_STG_Password?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:9a8b5gyBefqYPs15m6saHu1mfLMkD4IwYUiGlnAb7+Sjha46" internalId="_BlXUqBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Port" prompt="CTX_FORM_STG_Port?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="5432" internalId="_BlXUqRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Schema" prompt="CTX_FORM_STG_Schema?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="stg" internalId="_BlXUqhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Server" prompt="CTX_FORM_STG_Server?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="localhost" internalId="_BlXUqxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="127.0.0.1" internalId="_tCE3vhjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="dwh" internalId="_tCE3vxjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="5432" internalId="_tCE3wBjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3wRjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3whjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:azL0EjymrIMiA+2UC2qbHaq6kIzbdrSIN+O1O3QD/RiMux22" internalId="_tCE3wxjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="" internalId="_tCE3xBjkEe6cXor6mhz5Tw"/>
+  </context>
+  <context confirmationNeeded="false" name="PREPOD">
+    <contextParameter comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="" internalId="_BlX7gBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlX7gRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="postgres" internalId="_BlX7ghMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_Password" value="enc:system.encryption.key.v1:7H9pIiU7LBjNo0470LcRptldhw7eB/CA/sauHvmsPz7xv/L5" internalId="_BlX7gxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="5432" internalId="_BlX7hBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="ods" internalId="_BlX7hRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="_YrCp4OtBEe21ueDc2CzQAQ" type="id_String" value="localhost" internalId="_BlX7hhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_Data" prompt="CTX_FORM_REPERTOIRE_Data?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data" internalId="_BlX7hxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataArchives" prompt="CTX_FORM_REPERTOIRE_DataArchives?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Archives" internalId="_BlX7iBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInput" prompt="CTX_FORM_REPERTOIRE_DataInput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input" internalId="_BlX7iRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataInputReferentiel" prompt="CTX_FORM_REPERTOIRE_DataInputReferentiel?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Input\Referentiel" internalId="_BlX7ihMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataLogs" prompt="CTX_FORM_REPERTOIRE_DataLogs?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Logs" internalId="_BlX7ixMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_REPERTOIRE_DataOutput" prompt="CTX_FORM_REPERTOIRE_DataOutput?" promptNeeded="false" repositoryContextId="_M_u9gOs6Ee21ueDc2CzQAQ" type="id_String" value="C:\Users\nila.novita\Documents\project\Talend\Ressources\Sources\Data\Output" internalId="_BlX7jBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_AdditionalParams" prompt="CTX_FORM_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="" internalId="_BlX7jRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Database" prompt="CTX_FORM_STG_Database?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlX7jhMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Login" prompt="CTX_FORM_STG_Login?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_BlX7jxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Password" prompt="CTX_FORM_STG_Password?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:XJmnh7ygcaXsqX4DBCnvMcRXQvYKrgX0HeTR8kjWzqiSff5o" internalId="_BlX7kBMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Port" prompt="CTX_FORM_STG_Port?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="5432" internalId="_BlX7kRMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Schema" prompt="CTX_FORM_STG_Schema?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="stg" internalId="_BlX7khMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_STG_Server" prompt="CTX_FORM_STG_Server?" promptNeeded="false" repositoryContextId="_fNLTYPXEEe238N8KjWDbqA" type="id_String" value="localhost" internalId="_BlX7kxMlEe6QP4mlfyWwyA"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Server" prompt="CTX_FORM_DWH_Server?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="127.0.0.1" internalId="_tCE3xRjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Schema" prompt="CTX_FORM_DWH_Schema?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="dwh" internalId="_tCE3xhjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Port" prompt="CTX_FORM_DWH_Port?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="5432" internalId="_tCE3xxjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Login" prompt="CTX_FORM_DWH_Login?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3yBjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Database" prompt="CTX_FORM_DWH_Database?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="postgres" internalId="_tCE3yRjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_Password" prompt="CTX_FORM_DWH_Password?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_Password" value="enc:system.encryption.key.v1:uTtUKU4Zu/oJQVM1VFuVwxS0nLlmsmf/oo1nd94QI+9xzdGh" internalId="_tCE3yhjkEe6cXor6mhz5Tw"/>
+    <contextParameter comment="" name="CTX_FORM_DWH_AdditionalParams" prompt="CTX_FORM_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_Z7WX8PXFEe238N8KjWDbqA" type="id_String" value="" internalId="_tCE3yxjkEe6cXor6mhz5Tw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="224" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:mtYP1qNicRcVW3bc2eq3YqPZNJjjQfB+aIBGf7UX" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/nila.novita/Documents/project/Talend/Ressources/Sources/Logs&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;mesures.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_wh7YsPXEEe238N8KjWDbqA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tPostgresqlOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CTX_FORM_DWH_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CTX_FORM_DWH_Port" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CTX_FORM_DWH_Database" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.CTX_FORM_DWH_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CTX_FORM_DWH_AdditionalParams" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CTX_FORM_DWH_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.CTX_FORM_DWH_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:66xeZG3y8r1MiLU/NZLzJYH25Iff4KzdY/Tn5t8vcOk88VQeGmiJdGv70WGZ3Zo8cWh0g47tsHgR" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;stats&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logs&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowcatcher&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_flaokOshEe21ueDc2CzQAQ" name="DataOperation"/>
+    <routinesParameter id="_fl5JsOshEe21ueDc2CzQAQ" name="Mathematical"/>
+    <routinesParameter id="_fl80EOshEe21ueDc2CzQAQ" name="Numeric"/>
+    <routinesParameter id="_fl_3YOshEe21ueDc2CzQAQ" name="Relational"/>
+    <routinesParameter id="_fmDhwOshEe21ueDc2CzQAQ" name="StringHandling"/>
+    <routinesParameter id="_fmGlEOshEe21ueDc2CzQAQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_fmJBUOshEe21ueDc2CzQAQ" name="TalendDate"/>
+    <routinesParameter id="_fmPvAOshEe21ueDc2CzQAQ" name="TalendStringUtil"/>
+    <routinesParameter id="_fmMrsOshEe21ueDc2CzQAQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-192" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.CTX_FORM_REPERTOIRE_DataInputReferentiel+&quot;/region2021.csv&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileExist_1_FILENAME&quot;))"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_63AOwPXHEe238N8KjWDbqA - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/nila.novita/Documents/project/Talend/TOS_DI-20211109_1610-V8.0.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEFLIEU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TNCC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCCENR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBELLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REG"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEFLIEU"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TNCC"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCC"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCCENR"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBELLE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="region2021"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="2" name="REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="CHEFLIEU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TNCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="NCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="NCCENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="LIBELLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="CHEFLIEU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TNCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="NCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="NCCENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="LIBELLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ubDZgPXJEe238N8KjWDbqA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ods_region" name="INS_ODS_REGIONS">
+      <column comment="" key="false" length="2" name="code_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="chef_lieu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="type_nome_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_majuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="nom_en_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_minuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="INS_ODS_REGIONS">
+        <mapperTableEntries name="code_region" expression="INPUT_REGIONS.REG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="chef_lieu" expression="INPUT_REGIONS.CHEFLIEU " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_nome_clair" expression="INPUT_REGIONS.TNCC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_en_majuscule" expression="INPUT_REGIONS.NCC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="nom_en_clair" expression="INPUT_REGIONS.NCCENR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_en_minuscule" expression="INPUT_REGIONS.LIBELLE " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="INPUT_REGIONS" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="REG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CHEFLIEU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TNCC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NCC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NCCENR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBELLE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_LJe7oOs8Ee21ueDc2CzQAQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CTX_FORM_ODS_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CTX_FORM_ODS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CTX_FORM_ODS_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CTX_FORM_ODS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.CTX_FORM_ODS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0bDlkc6vzvZEDzSjjOYKd9W3FzgsgfFYzdZD6fJgErYia0e9bpvvEjBZc9VR/6gUpy7JsyM+6G9Q"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ods_region&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_LJe7oOs8Ee21ueDc2CzQAQ - ods_region" show="false"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CTX_FORM_ODS_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="chef_lieu"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_nome_clair"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_en_majuscule"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_en_clair"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_en_minuscule"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="*ods_regions*"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ods_region" name="tDBOutput_1">
+      <column comment="" key="false" length="2" name="code_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="chef_lieu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="type_nome_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_majuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="nom_en_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_minuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="ods_region" name="REJECT">
+      <column comment="" key="false" length="2" name="code_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="chef_lieu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="type_nome_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_majuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="nom_en_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_minuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Fichier des regions non trouvé&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;Fichier&quot;"/>
+      <elementValue elementRef="VALUE" value="context.CTX_FORM_REPERTOIRE_DataInputReferentiel+&quot;/etablissements_hospitaliers.xlsx&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_2" show="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="((String)globalMap.get(&quot;Fichier&quot;))"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Fichier des etablissements hospitaliers non trouvé&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="-22" offsetLabelY="0" posX="416" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;Fichier&quot;))"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:yCML8RvbeX7ya/nQRY9sF8wVaAHEplV0qoXp7SY7"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false">
+      <elementValue elementRef="SHEETNAME" value="&quot;Sheet&quot;"/>
+      <elementValue elementRef="USE_REGEX" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_FayMgBHVEe6Tw9dxFYnvbg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_FayMgBHVEe6Tw9dxFYnvbg - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_etab"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_etab"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adresse"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="complement_adresse"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_dept"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dept"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_tel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_fax"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_cat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categorie_etablissement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_etablissement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_tarif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lib_tarification"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_psph"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="participant_service_public_hospitalier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_ouverture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lng"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_etab"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_etab"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adresse"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="complement_adresse"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_dept"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dept"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_tel"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_fax"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_cat"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categorie_etablissement"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_type"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_etablissement"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_tarif"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lib_tarification"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_psph"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="participant_service_public_hospitalier"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_ouverture"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lng"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="etablissements_hospitaliers"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
+      <column comment="" key="false" length="9" name="code_etab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="nom_etab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="adresse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="complement_adresse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="num_dept" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="dept" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="num_tel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="num_fax" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="num_cat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="categorie_etablissement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="num_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="39" name="type_etablissement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="code_tarif" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="56" name="lib_tarification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="code_psph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="48" name="participant_service_public_hospitalier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_ouverture" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="9" name="code_etab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="nom_etab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="adresse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="complement_adresse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="num_dept" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="dept" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="num_tel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="num_fax" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="num_cat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="categorie_etablissement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="num_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="39" name="type_etablissement" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="code_tarif" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="56" name="lib_tarification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="code_psph" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="48" name="participant_service_public_hospitalier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_ouverture" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_e41UMBHVEe6Tw9dxFYnvbg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ods_etablissements_hospitaliers" name="INS_ETAB_HOSP">
+      <column comment="" key="false" length="9" name="code_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="nom_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="adresse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="complement_adresse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="code_dept" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_dept" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="num_tel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="num_fax" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="num_cat_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="categorie_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="num_type_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="type_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="code_tarif" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="lib_tarification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="code_psph" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="part_sp_hospitalier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_ouverture" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="lat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="INS_ETAB_HOSP">
+        <mapperTableEntries name="code_etablissement" expression="INPUT_ETAB_HOSP.code_etab " type="id_String" nullable="true"/>
+        <mapperTableEntries name="nom_etablissement" expression="INPUT_ETAB_HOSP.nom_etab " type="id_String" nullable="true"/>
+        <mapperTableEntries name="adresse" expression="INPUT_ETAB_HOSP.adresse" type="id_String" nullable="true"/>
+        <mapperTableEntries name="complement_adresse" expression="INPUT_ETAB_HOSP.complement_adresse" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_dept" expression="INPUT_ETAB_HOSP.num_dept " type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_dept" expression="INPUT_ETAB_HOSP.dept " type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_tel" expression="INPUT_ETAB_HOSP.num_tel" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_fax" expression="INPUT_ETAB_HOSP.num_fax" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_cat_etablissement" expression="INPUT_ETAB_HOSP.num_cat " type="id_String" nullable="true"/>
+        <mapperTableEntries name="categorie_etablissement" expression="INPUT_ETAB_HOSP.categorie_etablissement" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_type_etablissement" expression="INPUT_ETAB_HOSP.num_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_etablissement" expression="INPUT_ETAB_HOSP.type_etablissement" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_tarif" expression="INPUT_ETAB_HOSP.code_tarif" type="id_String" nullable="true"/>
+        <mapperTableEntries name="lib_tarification" expression="INPUT_ETAB_HOSP.lib_tarification" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_psph" expression="INPUT_ETAB_HOSP.code_psph" type="id_String" nullable="true"/>
+        <mapperTableEntries name="part_sp_hospitalier" expression="INPUT_ETAB_HOSP.participant_service_public_hospitalier " type="id_String" nullable="true"/>
+        <mapperTableEntries name="date_ouverture" expression="INPUT_ETAB_HOSP.date_ouverture" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="lat" expression="INPUT_ETAB_HOSP.lat" type="id_String" nullable="true"/>
+        <mapperTableEntries name="lng" expression="INPUT_ETAB_HOSP.lng" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="INPUT_ETAB_HOSP" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="code_etab" type="id_String" nullable="true"/>
+        <mapperTableEntries name="nom_etab" type="id_String" nullable="true"/>
+        <mapperTableEntries name="adresse" type="id_String" nullable="true"/>
+        <mapperTableEntries name="complement_adresse" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_dept" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dept" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_tel" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_fax" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_cat" type="id_String" nullable="true"/>
+        <mapperTableEntries name="categorie_etablissement" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_etablissement" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_tarif" type="id_String" nullable="true"/>
+        <mapperTableEntries name="lib_tarification" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_psph" type="id_String" nullable="true"/>
+        <mapperTableEntries name="participant_service_public_hospitalier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="date_ouverture" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="lat" type="id_String" nullable="true"/>
+        <mapperTableEntries name="lng" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_LJe7oOs8Ee21ueDc2CzQAQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CTX_FORM_ODS_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CTX_FORM_ODS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CTX_FORM_ODS_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CTX_FORM_ODS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.CTX_FORM_ODS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bJJlu/nw7+dLw8Ozjf0JLAEY/zBTHXSQY3WMV+p4LYBFA95Hw2EdGmbg2JQtzEEgFzzM7I3RHEjX"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ods_etablissements_hospitaliers&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_LJe7oOs8Ee21ueDc2CzQAQ - ods_etablissements_hospitaliers" show="false"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CTX_FORM_ODS_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_etablissement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_etablissement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adresse"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="complement_adresse"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_dept"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_dept"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_tel"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_fax"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_cat_etablissement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categorie_etablissement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_type_etablissement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_etablissement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_tarif"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lib_tarification"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_psph"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="part_sp_hospitalier"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_ouverture"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lng"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="&quot;ods_etablissements_hospitaliers&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ods_etablissements_hospitaliers" name="tDBOutput_2">
+      <column comment="" key="false" length="9" name="code_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="nom_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="adresse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="complement_adresse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="code_dept" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_dept" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="num_tel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="num_fax" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="num_cat_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="categorie_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="num_type_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="type_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="code_tarif" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="lib_tarification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="code_psph" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="part_sp_hospitalier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_ouverture" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="lat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="ods_etablissements_hospitaliers" name="REJECT">
+      <column comment="" key="false" length="9" name="code_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="nom_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="adresse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="complement_adresse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="code_dept" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_dept" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="num_tel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="num_fax" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="num_cat_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="categorie_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="num_type_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="type_etablissement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="code_tarif" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="lib_tarification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="code_psph" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="part_sp_hospitalier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_ouverture" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="lat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;Fichier&quot;"/>
+      <elementValue elementRef="VALUE" value="context.CTX_FORM_REPERTOIRE_DataInputReferentiel+&quot;/departement2021.txt&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_3" show="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="((String)globalMap.get(&quot;Fichier&quot;))"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_sPgUIPfbEe238N8KjWDbqA - metadata" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;Fichier&quot;))"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;\t&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_sPgUIPfbEe238N8KjWDbqA - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/nila.novita/Documents/project/Talend/TOS_DI-20211109_1610-V8.0.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEFLIEU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TNCC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCCENR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBELLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-1252&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEP"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REG"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEFLIEU"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TNCC"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCC"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NCCENR"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBELLE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="departement2021"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="2" name="DEP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="CHEFLIEU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TNCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NCCENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="LIBELLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="DEP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="CHEFLIEU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TNCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NCC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="NCCENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="LIBELLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="-48" offsetLabelY="-48" posX="608" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="__xZmcPfbEe238N8KjWDbqA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ods_departement" name="INS_ODS_DEPARTEMENTS">
+      <column comment="" key="false" length="3" name="code_departement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="code_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="chef_lieu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="type_nom_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_majuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="nom_en_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_minuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="INS_ODS_DEPARTEMENTS">
+        <mapperTableEntries name="code_departement" expression="INPUT_DEPARTEMENTS.DEP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_region" expression="INPUT_DEPARTEMENTS.REG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="chef_lieu" expression="INPUT_DEPARTEMENTS.CHEFLIEU " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_nom_clair" expression="INPUT_DEPARTEMENTS.TNCC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_en_majuscule" expression="INPUT_DEPARTEMENTS.NCC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="nom_en_clair" expression="INPUT_DEPARTEMENTS.NCCENR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_en_minuscule" expression="INPUT_DEPARTEMENTS.LIBELLE " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="INPUT_DEPARTEMENTS" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DEP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CHEFLIEU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TNCC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NCC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NCCENR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBELLE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_LJe7oOs8Ee21ueDc2CzQAQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CTX_FORM_ODS_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CTX_FORM_ODS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CTX_FORM_ODS_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CTX_FORM_ODS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.CTX_FORM_ODS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:34VI2aGwZEVytftVixRND0r4nY++VUvCTGbOCo15s0xtEKcP5kjhG5dBZGKZ6jKvVc+HvdCLZvE5"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ods_departement&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_LJe7oOs8Ee21ueDc2CzQAQ - ods_departement" show="false"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.CTX_FORM_ODS_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_departement"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="chef_lieu"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_nom_clair"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_en_majuscule"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_en_clair"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_en_minuscule"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="''ods_departement''"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ods_departement" name="tDBOutput_3">
+      <column comment="" key="false" length="3" name="code_departement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="code_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="chef_lieu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="type_nom_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_majuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="nom_en_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_minuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="ods_departement" name="REJECT">
+      <column comment="" key="false" length="3" name="code_departement" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="code_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="chef_lieu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="type_nom_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_majuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="nom_en_clair" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="libelle_en_minuscule" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1312">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Fichier des departements non trouvé &quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_3"/>
+  </node>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_1" target="tFileInputDelimited_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileExist_1" target="tDie_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tSetGlobalVar_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="INPUT_REGIONS" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_REGIONS" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="INS_ODS_REGIONS" lineStyle="0" metaname="INS_ODS_REGIONS" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="INS_ODS_REGIONS" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSetGlobalVar_1" target="tFileExist_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSetGlobalVar_1" target="tSetGlobalVar_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_2" target="tFileInputExcel_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_2_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileExist_2" target="tDie_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((Boolean)globalMap.get(&quot;tFileExist_2_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="INPUT_ETAB_HOSP" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_ETAB_HOSP" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="INS_ETAB_HOSP" lineStyle="0" metaname="INS_ETAB_HOSP" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="INS_ETAB_HOSP" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tFileExist_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_3" target="tFileInputDelimited_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_3_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If7" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileExist_3" target="tDie_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((Boolean)globalMap.get(&quot;tFileExist_3_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="INPUT_DEPARTEMENTS" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_DEPARTEMENTS" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="INS_ODS_DEPARTEMENTS" lineStyle="0" metaname="INS_ODS_DEPARTEMENTS" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDBOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="INS_ODS_DEPARTEMENTS" show="false"/>
+  </connection>
+  <note opaque="true" posX="256" posY="32" sizeHeight="64" sizeWidth="513" text="Création du job pour l'alimentation de la table ODS_REGION">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="166;193;152"/>
+  </note>
+  <note opaque="true" posX="224" posY="448" sizeHeight="65" sizeWidth="609" text="Création du job pour l'alimentation de la table ODS_ETABLISSEMENT">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="155;199;204"/>
+  </note>
+  <note opaque="true" posX="256" posY="960" sizeHeight="65" sizeWidth="609" text="Création du job pour l'alimentation de la table ODS_DEPARTEMENT">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="155;199;204"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

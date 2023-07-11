@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_YrLz0OtBEe21ueDc2CzQAQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_YrLz0etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_YrLz0utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods"/>
+    <contextParameter xmi:id="_YrLz0-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YrLz1OtBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_YrLz1etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:QIGu3RNpkCMVghVP++C5dc54u0R+JxzNOEGC5H5BHbtjeMDz"/>
+    <contextParameter xmi:id="_YrLz1utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_YrLz1-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_YrLz2OtBEe21ueDc2CzQAQ" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_YrLz2etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_YrLz2utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods"/>
+    <contextParameter xmi:id="_YrLz2-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YrLz3OtBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_YrLz3etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:34mJWyD8Hc84uSZeF4CkrkKsmlGiHm6INXk8SHiwRCgcxujw"/>
+    <contextParameter xmi:id="_YrLz3utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_YrLz3-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_YrLz4OtBEe21ueDc2CzQAQ" confirmationNeeded="false" name="PREPOD">
+    <contextParameter xmi:id="_YrLz4etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_YrLz4utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods"/>
+    <contextParameter xmi:id="_YrLz4-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YrLz5OtBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_YrLz5etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:4+E1t2cD5mxrM8uxRSzzdxMfMGkZrdAFe1an54/G52A6dqLN"/>
+    <contextParameter xmi:id="_YrLz5utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_YrLz5-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_YrLz6OtBEe21ueDc2CzQAQ" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_YrLz6etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Server" prompt="CTX_FORM_ODS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_YrLz6utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Schema" prompt="CTX_FORM_ODS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods"/>
+    <contextParameter xmi:id="_YrLz6-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_AdditionalParams" prompt="CTX_FORM_ODS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YrLz7OtBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Port" prompt="CTX_FORM_ODS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_YrLz7etBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Password" prompt="CTX_FORM_ODS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RictX4cKkMl6grjNuNos+s3UrJuxgHKc+gLGcUzqaKq55JAZ"/>
+    <contextParameter xmi:id="_YrLz7utBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Database" prompt="CTX_FORM_ODS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_YrLz7-tBEe21ueDc2CzQAQ" comment="" name="CTX_FORM_ODS_Login" prompt="CTX_FORM_ODS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:PositionalFileConnection xmi:id="_yGZe0BHhEe6Tw9dxFYnvbg" name="donnees_patients" dataPackage="_yGZe0RHhEe6Tw9dxFYnvbg" Server="Localhost 127.0.0.1" FilePath="C:/Users/nila.novita/Documents/project/Talend/Ressources/Sources/Data/Input/donnees_patients.txt" Format="WINDOWS" Encoding="windows-1252" FieldSeparatorValue="&quot;18,30,26,20,22,20,27,24,12,*&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_yGZe0RHhEe6Tw9dxFYnvbg" name="default" dataManager="_yGZe0BHhEe6Tw9dxFYnvbg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_yGZe0hHhEe6Tw9dxFYnvbg" id="_YmVaYBHgEe6Tw9dxFYnvbg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe0xHhEe6Tw9dxFYnvbg" label="CODE_PATIENT" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe1BHhEe6Tw9dxFYnvbg" label="CODE_ETABLISEMENT_HOSPITALIER" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe1RHhEe6Tw9dxFYnvbg" label="DEPARTEMENT_ETABLISEMENT" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe1hHhEe6Tw9dxFYnvbg" label="REGION_ETABLISEMENT" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe1xHhEe6Tw9dxFYnvbg" label="ANNEE_HOSPITALISATION" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe2BHhEe6Tw9dxFYnvbg" label="MOIS_HOSP" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe2RHhEe6Tw9dxFYnvbg" label="DATE_DEBUT_HOSPIT" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe2hHhEe6Tw9dxFYnvbg" label="DATE_FIN_HOSP" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe2xHhEe6Tw9dxFYnvbg" label="ETAT_P" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGZe3BHhEe6Tw9dxFYnvbg" label="DUREE_TRAITEMENT" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
